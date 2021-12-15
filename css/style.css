@@ -5,11 +5,19 @@ footer {
     font-size: 20px;
   }
 
+.div_produits{
+  display: inline-block;
+  height: 500px;
+}
+
 .carousel-inner img {
     width: 100%; /* Set width to 100% */
     margin: auto;
     margin-top: 50px;
     min-height:200px;
+}
+
+.image_shop{
 }
 
 /* Hide the carousel text when the screen is less than 600 pixels wide */
