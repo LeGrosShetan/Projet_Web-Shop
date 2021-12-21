@@ -13,12 +13,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<!-- NavBar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li><a href="#"><span class="glyphicon glyphicon-th-list"></span></a></li>
     </ul>
-    <div class="navbar-header" style="margin: 0 0 0 15px">
+    <div class="navbar-header">
       <a class="navbar-brand" href="#">Web4Shop</a>
     </div>
     <ul class="nav navbar-nav">
@@ -27,12 +28,13 @@
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Compte</a></li>
-
-      
     </ul>
   </div>
 </nav>
-    <?= $contenu ?>
+
+<?= $contenu ?>
+
+<!-- Footer -->
 <footer class="container-fluid text-center">
   <p>Maxime POIRET & Justin COLIN © 2021</p>
 </footer>
