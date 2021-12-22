@@ -16,18 +16,77 @@
 <!-- NavBar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li><a href="#"><span class="glyphicon glyphicon-th-list"></span></a></li>
-    </ul>
-    <div class="navbar-header">
+    <div class="navbar-header disabled">
       <a class="navbar-brand" href="#">Web4Shop</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="#">Accueil</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Compte</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <span class="glyphicon glyphicon-shopping-cart"></span></a>
+        <ul class="dropdown-menu">
+        <div class="panier1">
+          <p>Mon panier</p>
+          <div class="panier2">
+            <img class='image_shop' src='../ressource/abricotsSecs.jpg' style="width: 80px;">
+            <div class="panier2 panier3">
+              <p>Nom produit</p>
+              <div class="panier4">
+                <div class="panier5">
+                  <p>Quantité</p>
+                </div>
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <li class="divider"></li>
+          <div class="panier2">
+            <img class='image_shop' src='../ressource/biscuitsCannelle.jpg' style="width: 80px;">
+            <div class="panier2 panier3">
+              <p>Nom produit</p>
+              <div class="panier4">
+                <div class="panier5">
+                  <p>Quantité</p>
+                </div>
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-success" href="#" role="button">Payer XX.XX €</a>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <span class="glyphicon glyphicon-user"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Connexion</a></li>
+          <li><a href="#">Inscription</a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </nav>
