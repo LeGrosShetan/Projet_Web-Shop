@@ -7,12 +7,33 @@ function getBdd(){
     return $bdd;
 }
 
-function queryBDD($bdd){
-    $stmt = $bdd->prepare("SELECT * FROM PRODUCTS /*where name = ?*/");
-    $stmt->execute(/*[$_GET['name']]*/);
-    echo "<div class='container'>";
-    foreach ($stmt as $row) {
-      echo "<a href='#'><div class='div_produits'>".$row['name']."<img class='image_shop' src='../ressource/".$row['image']."'></div></a>";
+function queryBDD($bdd,$table,$columns ='*'){
+    $stmt = $bdd->prepare("SELECT $columns FROM $table ");
+    $stmt->execute();
+    return $stmt;
+}
+
+function isImage($item){
+  if(str_ends_with($item, ".jpg") || str_ends_with($item, ".png") || str_ends_with($item, ".jpeg")){
+    return TRUE;
+  }
+  return FALSE;
+}
+
+function showQueryResults($data){
+  $list = $data->fetchAll($mode =PDO::FETCH_ASSOC);
+  echo "<div class='container'>";
+  foreach ($list as $row) {
+    echo "<a href='#'><div class='div_produits'>";
+    foreach ($row as $item){
+      if(isImage($item)){
+        echo "<img class='image_shop' src='../ressource/$item'>";
+      }
+      else{
+        echo"$item";
+      }
     }
-    echo "</div>";
+    echo"</div></a>";
+  }
+  echo "</div>";
 }
