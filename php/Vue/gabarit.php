@@ -20,7 +20,7 @@
       <a class="navbar-brand" href="#">Web4Shop</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#">Accueil</a></li>
+      <li><a href="/Projet_Web-Shop/php/index.php">Accueil</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
@@ -83,7 +83,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
         <span class="glyphicon glyphicon-user"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Connexion</a></li>
+          <li><a href="Vue/Connexion.php">Connexion</a></li>
           <li><a href="#">Inscription</a></li>
         </ul>
       </li>
