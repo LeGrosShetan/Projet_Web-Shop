@@ -30,3 +30,45 @@ footer {
   max-height: 100%;
   display: block;
 }
+
+.panier1{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.panier2{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.panier4{
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.panier5 p{
+  margin: 0 10px 0 0;
+  font-weight: normal;
+}
+.panier5{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.panier4 select{
+  width: 51px;
+}
+
+.panier3{
+  flex-direction: column;
+  margin: 10px 0 10px 10px;
+  white-space:nowrap;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+  font-weight: bold;
+}
