@@ -17,11 +17,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header disabled">
-      <a class="navbar-brand" href="#">Web4Shop</a>
+      <a class="navbar-brand" href="/projet/php/index.php">Web4Shop</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="/Projet_Web-Shop/php/index.php">Accueil</a></li>
-    </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -76,7 +73,7 @@
               </div>
             </div>
           </div>
-          <a class="btn btn-success" href="#" role="button">Payer XX.XX €</a>
+          <a class="btn btn-success" href="" role="button">Payer XX.XX €</a>
         </ul>
       </li>
       <li class="dropdown">
