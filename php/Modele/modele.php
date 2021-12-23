@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 // Effectue la connexion à la BDD
 // Instancie et renvoie l'objet PDO associé
 function getBdd(){
@@ -20,8 +20,12 @@ function isImage($item){
   return FALSE;
 }
 
+function PDOToClass($PDOStatement){
+  return($PDOStatement->fetchAll($mode =PDO::FETCH_CLASS));
+}
+
 function showQueryResults($data){
-  $list = $data->fetchAll($mode =PDO::FETCH_ASSOC);
+  $list = PDOToClass($data);
   echo "<div class='container'>";
   foreach ($list as $row) {
     echo "<a href='#'><div class='div_produits'>";
