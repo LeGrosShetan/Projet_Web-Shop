@@ -1,0 +1,551 @@
+/* css gabarit */
+body{
+    margin: 90px 0 0 0; /* 90px = 58px (navbar) + 2rem */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+main{
+    min-height: 543px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css gabarit HEADER */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: rgb(40 44 47);
+    padding: 0;
+}
+
+.nav .nav-list{
+    display: flex;
+    gap: 1rem;
+    
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0;
+}
+  
+.nav .nav-list li{
+    padding: 1rem;
+}
+  
+.nav .nav-list button, .nav .nav-list p, .nav .nav-list a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .nav-list button{
+    border: none;
+    background-color: transparent;
+}
+  
+.nav .nav-list button:hover, .nav .nav-list a:hover{
+    color: rgb(169, 177, 177);
+}
+  
+.nav .nav-list p:hover{
+    cursor: default;
+}
+
+.nav .nav-list button:hover{
+    cursor: pointer;
+}
+
+.panier-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    right: 5rem;
+    background-color: rgb(196, 196, 196);
+    z-index: 0;
+    width: 19rem;
+    padding: 5px;
+    border: rgb(31, 31, 31) 1px solid;
+    box-shadow: 1px 1px 2px rgb(24, 24, 24);
+}
+
+.panier-container .titre{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.panier-container .produit{
+    display: flex;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: rgb(220, 224, 224);
+    border-top: 1px rgb(66, 62, 62) solid;
+}
+
+.panier-container .produit .info{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.panier-container .produit .info .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 0 1rem;
+}
+
+.panier-container .produit .info .text span{
+    font-size: 16px;
+    color: black;
+}
+
+.panier-container .produit .info .text span button{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color:rgb(221, 0, 0);
+}
+
+.panier-container .produit .info .text .compteur{
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    color:rgb(0, 0, 0);
+}
+
+.panier-container .produit .info .text .compteur > *{
+    margin: 0 5px;
+}
+
+.panier-container .produit .info .text .compteur button{
+    color: black;
+}
+
+.panier-container .produit .info .text span button:hover{
+    cursor: pointer;
+    color: rgb(145, 0, 0);
+}
+
+.panier-container .produit .info .text span:nth-child(1){
+    font-weight: bold;
+}
+
+.panier-container .total{
+    display: flex;
+    gap: 6rem;
+
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.panier-container .total span:nth-child(1){
+    font-weight: bold;
+}
+
+.panier-container .payer{
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(91 192 222);
+    border-color: rgb(87, 184, 214);
+}
+
+.panier-container .payer a{
+    color: white;
+    text-decoration: none;
+}
+
+.panier-container .payer:hover{
+    background-color: rgb(64, 136, 158);
+    border-color: rgb(58, 123, 143);
+    cursor: pointer;
+}
+
+.compte-container-disconnect, .compte-container-connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    right: 1rem;
+    background-color: rgb(196, 196, 196);
+    z-index: 0;
+    border: rgb(31, 31, 31) 1px solid;
+    box-shadow: 1px 1px 2px rgb(24, 24, 24);
+}
+
+.compte-container-disconnect .nav-compte, .compte-container-connect .nav-compte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.compte-container-disconnect .nav-compte a, .compte-container-connect .nav-compte a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.compte-container-disconnect .nav-compte a:hover, .compte-container-connect .nav-compte a:hover{
+    background-color: rgb(129 129 129);
+}
+
+/* css gabarit FOOTER */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(40 44 47);
+    margin: 2rem 0 0 0;
+    padding: 0;
+    color: white;
+}
+
+.foot-info{
+    display: flex;
+    max-width:800px;
+    margin-top: 10px;
+}
+
+.foot-info > * {
+    flex: 1;
+}
+
+.foot-info .left{
+    display: flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+
+    font-size: 22px;
+}
+
+.foot-info .left .box i{
+    margin: 1rem;
+    padding: 15px;
+    min-width: 22px;
+    max-height: 22px;
+    text-align:center;
+    background-color: rgb(49 57 59);
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px rgb(15, 15, 15);
+}
+
+.foot-info .right{
+    display: flex;
+    flex-direction : column;
+    justify-content:center;
+}
+
+.foot-info .right h1, .foot-info .right p{
+    margin: 1rem;
+    padding: 0;
+}
+
+.foot-copy p{
+    font-size: 16px;
+}
+
+.foot-info .left .box{
+  display: flex;
+}
+
+.foot-info .left .box p{
+    display: flex;
+    align-items: center;
+
+    font-size: 19px;
+}
+
+/* css vueAccueil */
+ .logo{
+    display: flex;
+    margin: 2rem 0; 
+    background-color: rgb(129 129 129); 
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+     .logo img{
+        height: 200px;
+    }
+}
+
+.accueil .nav2{
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+}
+
+.accueil .nav2 .nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    list-style: none;
+    margin: 0 0 0 3rem;
+    padding: 0;
+}
+
+.accueil .nav2 .nav-list a{
+    text-decoration: none;
+    color: rgb(40 44 47);
+}
+
+.accueil .nav2 .nav-list a:hover{  
+    box-shadow: 0 5px 5px -5px rgb(40 44 47);
+}
+
+.accueil .vente{
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.accueil .vente .container-name{
+    margin: 0 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.accueil .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.accueil .container .container2{
+    display: flex;
+    border: solid rgb(40 44 47) 2px;
+    width: 500px;
+
+    margin: 1rem;
+    padding: 3px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.accueil .container .container2 .info{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.accueil .container .container2 .info .text{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+
+    padding: 0 1rem;
+}
+
+.accueil .container .container2 .info .text span{
+    font-size: 18px;
+    color: black;
+}
+
+.accueil .container .container2 .info .text span button{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: darkgreen;
+}
+
+.accueil .container .container2 .info .text span button:hover{
+    cursor: pointer;
+    color: rgb(0, 48, 0);
+}
+
+.accueil .container .container2 .info .text span:nth-child(1){
+    font-weight: bold;
+}
+
+.panier{
+    padding: 2rem 0;
+    background-color: rgb(219, 219, 219);
+}
+
+.panier .container {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 0.5rem;
+    
+}
+
+.panier .container .cart{
+    width: 35rem;
+}
+
+.panier .container .cart .entete{
+    font-size: larger;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(216, 216, 216, 0.295);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.panier .container > *{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.panier .container .cart .produit{
+    display: flex;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(216, 216, 216, 0.295);
+    
+}
+
+.panier .container .cart .produit .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+.panier .container .cart .produit .info .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.panier .container .cart .produit .info select{
+    border: none;
+    background-color: rgba(221, 221, 221, 0.74);
+    border-radius: 3px;
+    padding: 5px;
+    font-size: medium;
+}
+
+.panier .container .cart .produit .info .text button{
+    border: none;
+    background-color: white;
+}
+
+.panier .container .cart .produit .info .text button:hover{
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+.panier .container .cart .produit .info .text:nth-child(1) button:nth-child(1){
+    font-size: 20px;
+}
+
+.panier .container .cart .total{
+    display: flex;
+    justify-content: right;
+    padding-top: 1rem;
+
+    gap: 2rem;
+    font-weight: bold;
+}
+
+.panier .container .cart .produit .info .text:nth-child(1) span:nth-child(1){
+    font-weight: bold;
+}
+
+.panier .container .paiement{
+    width: 20rem;
+}
+
+.panier .container .paiement .entete{
+    font-size: larger;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(216, 216, 216, 0.295);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.panier .container .paiement .recap{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: medium;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(216, 216, 216, 0.295);
+}
+
+.panier .container .paiement .recap .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.panier .container .paiement .recap span:nth-child(1){
+    font-weight: bold;
+}
+
+.panier .container .paiement .payer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.panier .container .paiement .payer button{
+    width: 100%;
+    border: 2px solid rgb(22, 167, 99);
+    background-color: rgba(22, 167, 99, 0.863);
+    color: ivory;
+    font-weight: bold;
+    padding: 7.5px;
+}
+
+.panier .container .paiement .payer button:hover{
+    border: 2px solid rgb(20, 150, 89);
+    background-color: rgba(20, 150, 89, 0.863);
+    cursor: pointer;
+}
+
+.panier .container .paiement .payer span{
+    font-size: 13px;
+    font-weight:bold;
+}
+
+.panier .container .paiement .payer .cartes span{
+    font-size: large;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1042px) {
+    .panier .container{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .panier .container .cart{
+        width: 20rem;
+    }
+}

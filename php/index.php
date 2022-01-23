@@ -1,18 +1,34 @@
 <?php 
-// Accès aux données du modèle
-require 'Modele/modele.php'; 
+session_start();
 
+
+require 'Controleur/controleur.php'; 
 
 try {
-  // Affichage de la vue de la page d'accueil du site
-  require 'Vue/vueAccueil.php';
+  updateCart();
+  if (isset($_GET['action'])) {
+    if ($_GET['action'] == 'Vpanier') {
+      Affpanier();
+    }else if ($_GET['action'] == 'Vaccueil'){
+      Affaccueil();
+    }else if ($_GET['action'] == 'Vconnexion'){
+      Affconnexion();
+    }else if ($_GET['action'] == 'Vinscription'){
+      Affinscription();
+    }else if ($_GET['action'] == 'inscription'){
+      inscription();
+    }else if ($_GET['action'] == 'connexion'){
+      connexion();
+    }else if ($_GET['action'] == 'deconnexion'){
+      deconnexion();
+    }else if ($_GET['action'] == 'facturation') {
+      Afffacture();
+    }else{
+      throw new Exception("Exception");
+    }
+  }else{
+    Affaccueil();
+  }
 }catch (Exception $e) {
-  $msgErreur = $e->getMessage();
-  // Affichage de la vue de la page d'erreur
-  require 'Vue/vueErreur.php';
+    erreur($e->getMessage());
 }
-
-
-
-
-
