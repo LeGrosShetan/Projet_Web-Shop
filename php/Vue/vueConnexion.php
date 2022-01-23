@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Connexion</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="../css/styleConnexion.scss">
+    <link rel="stylesheet" href="../css/styleConnexion.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
             <div class="form">
                 <form action="/projet/php/index.php?action=connexion" method="post">
                     <input type="text" id="login" name="login" placeholder="Identifiant">
-                    <input type="text" id="password" name="password" placeholder="Mot de passe">
+                    <input type="password" id="password" name="password" placeholder="Mot de passe">
                     <a href="#">Mot de passe oublié ?</a>
                     <input type="submit" value="Connexion">
                     <?php echo '<div style="text-align:center; max-width:282px; margin:0 ; color:red">'.$err.'</div>' ;?>

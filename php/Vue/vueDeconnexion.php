@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Deconnexion</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="../css/styleConnexion.scss">
+    <link rel="stylesheet" href="../css/styleConnexion.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>

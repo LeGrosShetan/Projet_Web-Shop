@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $titre ?></title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="/projet/css/style.scss">
+    <link rel="stylesheet" href="/projet/css/style.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     

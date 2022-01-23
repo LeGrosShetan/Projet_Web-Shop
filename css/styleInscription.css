@@ -1,0 +1,107 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(219, 219, 219);
+}
+
+main{
+    min-height: 959px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.container .title{
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.container .form{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 2px solid rgba(216, 216, 216, 0.295);
+    border-bottom: 2px solid rgba(216, 216, 216, 0.295);
+}
+
+.container .form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .form form input{
+    border: none;
+    background-color: whitesmoke;
+    padding: 1rem;
+    font-size: 16px;
+    min-width: 250px;
+}
+
+.container .form form > *{
+    margin: 0.5rem 0;
+}
+
+.container .form form a{
+    font-size: small;
+    margin-top: 0;
+    color: rgb(33, 168, 155);
+    text-decoration: none;
+}
+
+.container .form form a:hover{
+    color: rgb(27, 138, 127);
+}
+
+.container .form form input:nth-child(7){
+    border: 2px solid rgb(27, 138, 127);
+    border-radius: 5px;
+    background-color: rgb(33, 168, 155);
+    color: white;
+    font-weight: bold;
+}
+
+.container .form form input:nth-child(7):hover{
+    border: 2px solid rgb(21, 107, 99);
+    border-radius: 5px;
+    background-color: rgb(27, 138, 127);
+    cursor: pointer;
+}
+
+.container .redirect{
+    font-size: small;
+    margin-top: 1rem;
+}
+.container .redirect a{
+    color: rgb(33, 168, 155);
+    text-decoration: none;
+}
+
+.container .redirect a:hover{
+    color: rgb(27, 138, 127);
+}
+
+.retour{
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    color: rgb(33, 168, 155);
+    text-decoration: none;
+}
+
+.retour:hover{
+    color: rgb(27, 138, 127);
+    text-decoration: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}

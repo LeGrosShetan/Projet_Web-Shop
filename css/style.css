@@ -336,7 +336,7 @@ header{
 .accueil .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .accueil .container .container2{

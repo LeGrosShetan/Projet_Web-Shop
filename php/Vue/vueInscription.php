@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inscription</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="/projet/css/styleInscription.scss">
+    <link rel="stylesheet" href="/projet/css/styleInscription.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
