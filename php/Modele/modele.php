@@ -166,9 +166,11 @@ function updateCart(){
       if($_SESSION['panierQuantity'][$_SESSION['decremente_key']] > 1){
         $_SESSION['panierQuantity'][$_SESSION['decremente_key']]--;
       }
+      unset($_SESSION['decremente_key']);
     }
     if(isset($_SESSION['incremente_key'])){
       $_SESSION['panierQuantity'][$_SESSION['incremente_key']]++;
+      unset($_SESSION['incremente_key']);
     }
   }
   else{

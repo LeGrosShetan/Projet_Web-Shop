@@ -51,4 +51,5 @@ function deconnexion(){
 
 function Afffacture(){
     require 'facture.php';
+    unset($_SESSION['adress']);
 }

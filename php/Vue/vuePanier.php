@@ -43,7 +43,12 @@
             </div>";
 
         echo"</div>
-        <div class='paiement'>
+        <div class='paiement'>";
+            echo"<div class='Adresse'>
+                <label for='Adresse'>Adresse de livraison (Obligatoire !):</label>
+                <input type='text' id='Adresse_val' name='Adresse'/>
+            </div>
+            </br>
             <div class='entete'>
                 <span>TOTAL</span>
             </div>
@@ -59,7 +64,7 @@
                 
             </div>
             <div class='payer'>
-                <a href='/projet/php/index.php?action=facturation'><button>PAIEMENT</button></a>
+                <a href='/projet/php/index.php?action=Vpanier'><button  class='envoi_paiement'>PAIEMENT</button></a>
                 <span>NOUS ACCEPTONS :</span>
                 <div class='cartes'>
                     <span><i class='fa fa-cc-visa'></i></span>

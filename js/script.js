@@ -91,4 +91,16 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('.envoi_paiement').click(function() {
+    var Adress=document.getElementById("Adresse_val").value;
+
+    $.ajax({
+      type: "POST",
+      url: "update_session.php",
+      data: {'adress': Adress},
+      success: function( data ) {
+      }
+    });
+  });
 });

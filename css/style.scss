@@ -507,6 +507,14 @@ header{
     font-weight: bold;
 }
 
+.panier .container .paiement .Adresse{
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .panier .container .paiement .payer{
     display: flex;
     flex-direction: column;

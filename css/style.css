@@ -539,6 +539,8 @@ header{
     font-weight: normal;
 }
 
+
+
 @media screen and (max-width: 1042px) {
     .panier .container{
         flex-direction: column;

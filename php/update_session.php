@@ -4,4 +4,5 @@
     $_SESSION['delete_id']      = $_POST['delete_id'];
     $_SESSION['decremente_key'] = $_POST['decremente_key'];
     $_SESSION['incremente_key'] = $_POST['incremente_key'];
+    $_SESSION['adress']         = $_POST['adress'];
 ?>

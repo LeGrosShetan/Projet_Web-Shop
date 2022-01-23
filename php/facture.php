@@ -45,8 +45,10 @@ foreach($_SESSION['panier'] as $key=>$products){
     $pdf->SetFont('Times','',12);
     $pdf->Cell(0,10,"       Quantité :".$_SESSION['panierQuantity'][$key]."     Prix unitaire :".$products->price."€",0,1);
     $pdf->SetFont('Times','B',12);
-    $pdf->Cell(0,10,"Sous-total :".$prix,0,1);
+    $pdf->Cell(0,10,"Sous-total :".$prix."€",0,1);
 }
+$pdf->SetFont('Times','',15);
+$pdf->Cell(0,10,"Adresse de livraison: ".$_SESSION['adress'],0,1);
 $pdf->SetFont('Times','B',20);
 $pdf->Cell(0,10,"Total de la commande :".$total."€",0,1);
 $pdf->Output();

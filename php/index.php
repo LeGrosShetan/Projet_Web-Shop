@@ -8,7 +8,17 @@ try {
   updateCart();
   if (isset($_GET['action'])) {
     if ($_GET['action'] == 'Vpanier') {
-      Affpanier();
+      if(isset($_SESSION['adress'])){
+        if(trim($_SESSION['adress'])!=''){ 
+            Afffacture();
+        }
+        else{
+            Affpanier();
+        }
+      }
+      else{
+        Affpanier();
+      }
     }else if ($_GET['action'] == 'Vaccueil'){
       Affaccueil();
     }else if ($_GET['action'] == 'Vconnexion'){

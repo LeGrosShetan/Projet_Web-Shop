@@ -64,7 +64,7 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 (3, 'Jus'),
 (4, 'Cafés'),
 (5, 'Tisanes & Thés'),
-(6, 'desserts');
+(6, 'Desserts');
 
 -- --------------------------------------------------------
 
