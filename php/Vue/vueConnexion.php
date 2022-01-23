@@ -23,6 +23,7 @@
                 </form>
             </div>
             <span class="redirect">Vous n'avez pas de compte ? <a href="/projet/php/index.php?action=Vinscription">Inscrivez-vous</a></span>
+            <span class="redirect"><a href="/projet/php/index.php?action=Vinscription">Accès Admin</a></span>
         </div>
         <a href="/projet/php/index.php?action=Vaccueil" class="retour">Retour au site</a>
     </main>
